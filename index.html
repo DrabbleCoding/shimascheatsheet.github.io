@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shima's Cheatsheet</title>
+    <link rel="stylesheet" href="resources/index.css">
+</head>
+<header>
+    <h1>Shima's ultimate HTML and CSS cheatsheet</h1>
+</header>
+<body>
+    <section class="tables">
+        <h1 class="subject-header">Tables</h1>
+        <table>
+            <thead>
+                <tr class="heading">
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>   
+                    <th>Example</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;table&gt;</td>
+                    <td>Table</td>
+                    <td>wrapper element that encompases all HTML tables</td>
+                    <td>
+                        <pre>
+                            &lt;table&gt;
+                              &lt;tr&gt;
+                                ...
+                              &lt;/tr&gt;
+                            &lt;/table&gt;
+
+
+                        </pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;tr&gt;</td>
+                    <td>Table Row</td>
+                    <td>adds rows to the table, without any data</td>
+                    <td>
+                        <pre>
+                        &lt;table&gt;
+                          &lt;tr&gt;
+                            &lt;td&gt;cell 1 data&lt;/td&gt;
+                            &lt;td&gt;cell 2 data&lt;/td&gt;
+                          &lt;/tr&gt;
+                        &lt;/table&gt;
+                        </pre>
+                    </td>
+
+
+                </tr>
+                <tr>
+                    <td>&lt;td&gt;</td>
+                    <td>Table Data</td>
+                    <td>adds cell of data to the table, nested inside a &lt;tr&gt; element</td>
+                    <td>see example above</td>
+                </tr>
+                <tr>
+                    <td>&lt;thead&gt;</td>
+                    <td>Table Head</td>
+                    <td>defines head of table columns within a table row (settings could be applied using css ruling with this tag, separate from tr)</td>
+                    <td>
+                        <pre>
+                        &lt;table&gt;
+                          &lt;thead&gt;
+                            &lt;tr&gt;
+                              &lt;th&gt;heading 1&lt;/th&gt;
+                              &lt;th&gt;heading 2&lt;/th&gt;
+                            &lt;/tr&gt;
+                          &lt;thead&gt;
+                          &lt;tbody&gt;
+                            &lt;tr&gt;
+                              &lt;td&gt;col 1&lt;/td&gt;
+                              &lt;td&gt;col 2&lt;/td&gt;
+                            &lt;/tr&gt;
+                          &lt;/body&gt;
+                        &lt;/table&gt;
+                        </pre>
+                    </td>
+
+
+                </tr>
+                <tr>
+                    <td>&lt;th&gt;</td>
+                    <td>Table Heading</td>
+                    <td>adds titles to rows and columbs of a table, must be enclosed within a &lt;tr&gt; element </td>
+                    <td>
+                        <pre>
+                        &lt;table&gt;
+                          &lt;tr&gt;
+                            &lt;th&gt;column 1&lt;/th&gt;
+                            &lt;th&gt;column 2&lt;/th&gt;
+                          &lt;/tr&gt;
+                          &lt;tr&gt;
+                            &lt;td&gt;data 1&lt;/td&gt;
+                            &lt;td&gt;data 2&lt;/td&gt;
+                          &lt;/tr&gt;
+                        &lt;/table&gt;
+                        </pre>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>&lt;tbody&gt;</td>
+                    <td>Table Body</td>
+                    <td>semantic element that contains all table data other than the table heading and the footer (&lt;table&gt; cannot have both &lt;tbody&gt; and &lt;tr&gt; as dirent children </td>
+                    <td>
+                        <pre>
+                        &lt;table&gt;
+                          &lt;tr&gt;
+                            &lt;th&gt;column 1&lt;/th&gt;
+                            &lt;th&gt;column 2&lt;/th&gt;
+                          &lt;/tr&gt;
+                          &lt;tr&gt;
+                            &lt;td&gt;data 1&lt;/td&gt;
+                            &lt;td&gt;data 2&lt;/td&gt;
+                          &lt;/tr&gt;
+                        &lt;/table&gt;
+                        </pre>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>&lt;tfoot&gt;</td>
+                    <td>Table Footer</td>
+                    <td>uses table rows to give footer content or to summarize content at the end of a table.</td>
+                    <td class="pics"><img src="resources/images/tfoot.png" alt="screenshot of tfoot usage"></td>
+
+                </tr>
+                
+                <tr>
+                    <td>colspan</td>
+                    <td>column spreader</td>
+                    <td>indicated how many columns that particular cell should span within the table. This attribute could be applied to both a table header &lt;th&gt; and a table data &lt;td&gt;. The value is set to 1 by default, and will take any positive integer between 1 and 1000 </td>
+                    <td class="pics"><img src="resources/images/colspan.png" alt="screenshot of how colspan is used in a &lt;td&gt; element"></td>
+
+                </tr>
+                <tr>
+                    <td>rowspan</td>
+                    <td>row speader</td>
+                    <td>similar to colspan, it indicates how many rows a cell should span within the table. It could be applied to both a table header or a table element.</td>
+                    <td class="pics" id="rowspan"><img src="resources/images/rowspan.png" alt="screenshot of how rowspan is used in a &lt;th&gt; element"></td>
+
+                </tr>
+
+            </tbody>
+
+
+        </table>
+        <h1 class="subject-header">page structure</h1>
+        <h3>text on page, lists, etc.</h3>
+        <table>
+            <thead>
+                <tr class="heading">
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>   
+                    <th>Example</th>
+                </tr>
+
+            </thead>
+
+
+        </table>
+
+        <h1 class="subject-header">Figures</h1>
+        <h3>figures include images, videos, audio files, including their captions.</h3>
+        
+        <table>
+            <thead>
+                <tr class="heading">
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>   
+                    <th>Example</th>
+                </tr>
+
+            </thead>
+
+
+
+        </table>
+
+
+    </section>
+
+    
+</body>
+</html>

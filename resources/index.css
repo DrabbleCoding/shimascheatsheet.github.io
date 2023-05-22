@@ -1,0 +1,54 @@
+*{
+    background-color: rgb(240, 250, 196);
+}
+table, th, td{
+    /* table-layout: auto; */
+    border: 2px solid mediumvioletred ;
+    border-collapse: collapse;
+    background-color: white;
+    
+
+
+}
+
+.tables{
+    font-family:'Courier New', Courier, monospace ;
+    text-align: center;
+}
+
+.tables h3{
+    text-align: left;
+}
+
+.heading th{
+    padding: 15px;
+    background-color: lightpink;
+
+}
+
+header h1{ 
+    text-align: center;font-family: 'Courier New', Courier, monospace;
+
+}
+
+.subject-header{
+    background-color: rgb(206, 76, 119);
+    color: white;
+    text-align: left;
+}
+
+/* .pics{ 
+    align-self:baseline;
+} 
+gotta fix this one later. want to lean the photos to the left of the cell.
+*/
+/* 
+#rowspan{
+    height: 50%;
+    width: 50%;
+} this one too */
+
+pre{
+    background-color: white;
+    text-align: left;
+}
